@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            position: relative;
+            background-color: #4c4c4c;
+        }
+        #bulbImg{
+            height: 300px;
+            position: absolute;
+            left: 45%;
+        }
+        #btn{
+            position: absolute;
+            left: 45%;
+            top: 50%;
+            cursor: pointer;
+            border-radius: 10px;
+            height: 50px;
+            width: 150px;
+        }
+
+    </style>
+</head>
+<body>
+    <img id="bulbImg" src="./OffBulb.jpg" alt="">
+     <button id="btn" onclick="OnAndOff()">Turn ON the bulb</button>
+    <script>
+        let toggle = false
+        const OnAndOff = () =>{
+            if(toggle){
+                document.getElementById('bulbImg').src = './OffBulb.jpg'
+                toggle = false
+                document.getElementById('btn').innerText = 'Turn ON the bulb'
+            }else{
+                document.getElementById('bulbImg').src = './OnBulb.jpg'
+                toggle = true
+                document.getElementById('btn').innerText = 'Turn OFF the bulb'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            position: relative;
+        }
+        #number{
+            position: absolute;
+            left: 50%;
+            top: 30%;
+        }
+        .btn-container{
+            position: absolute;
+            left: 47%;
+            top: 40%;
+        }
+        .btn{
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: lightgray;
+            width: 50px;
+            height: 30px;
+            font-size: xx-large;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="number">0</h1>
+    <div class="btn-container">
+        <button id="puls" class="btn" onclick="Increase()">+</button>
+        <button id="mius" class="btn" onclick="Decreases()">-</button>
+    </div>
+    <script>
+        let count = 0
+        let element = document.getElementById('number');
+        const Increase = () =>{
+            count++
+            element.innerText = count
+        }
+        const Decreases = () =>{
+            count--
+            element.innerText = count
+        }
+    </script>
+</body>
+</html>
