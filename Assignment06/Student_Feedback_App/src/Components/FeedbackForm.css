@@ -1,0 +1,67 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+span{
+    color: red;
+}
+.name{
+    text-align: left;
+}
+.name-container{
+    display: flex;
+    gap: 2px;
+    text-align: left;
+}
+.one{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.fname{
+    padding: 5px;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    margin: 2px 2px 2px 0;
+}
+.two{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.size{
+    font-size: 0.7rem;
+}
+.studentId{
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    padding: 5px;
+    color: white;
+    outline: none;
+}
+label{
+    text-align: left;
+    padding: 2px 0;
+}
+.op{
+    color: black;
+    background-color: transparent;
+}
+.rate{
+    text-align: left;
+    padding: 5px 0;
+}
+.btn-container{
+    margin-top: 50px;
+}
+.btn{
+    border-radius: 50px;
+    padding: 10px;
+    border: none;
+    background-image: linear-gradient(to bottom, gray, black);
+    color: white;
+}
